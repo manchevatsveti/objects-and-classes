@@ -16,3 +16,5 @@ public class Circle_test {
 		circle2.setNewR(100);
 		System.out.println("Radius: "+ circle2.getRadius() + " Area: "+ circle2.GetArea()+ "Perimeter: " + circle2.getP() );
 	}
+	
+}
