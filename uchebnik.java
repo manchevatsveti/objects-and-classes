@@ -1,8 +1,8 @@
 package eddu.smg;
 
 public class uchebnik {
-public String name = new String("student");
-public double average=2;
+private String name = new String();
+private double average;
 
  uchebnik(){
  }
@@ -15,6 +15,18 @@ public double average=2;
 		else {
 			return false;
 		}
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String n) {
+		name = n;
+	}
+	public double getAverage() {
+		return average;
+	}
+	public void setAverage(double a) {
+		average=a;
 	}
 }
 
