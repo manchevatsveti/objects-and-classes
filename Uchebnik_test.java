@@ -9,18 +9,19 @@ public class Uchebnik_test {
  
 		for(int i=0;i<5;i++) {
 			System.out.println("Name of student" + (i+1)+ " ?");
-			students[i].name= in.next();
+			students[i].getName()= in.next();
 			System.out.println("Average of student" + (i+1)+ " ?");
-			students[i].average= in.nextDouble();
+			students[i].getAverage()= in.nextDouble();
 		}
+		
 	}
 
 	public void uchenitsi (uchebnik[] st) {
 		for(int i=0;i<5;i++) {
 		if(st[i].stipendia(st[i])) {
-			System.out.println(st[i].name);
+			System.out.println(st[i].getName());
 		}
-		}
+	}
 	}
 
 }
