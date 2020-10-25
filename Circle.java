@@ -1,7 +1,7 @@
 package eddu.smg;
-import java. lang. Math;
+import java.lang.Math;
 public class Circle {
-public double radius =1;
+private double radius =1;
 Circle(){
 }
 Circle(double NewRadius){
@@ -16,4 +16,11 @@ public double getP(){
 public void setNewR(double NewRadius){
 	radius = NewRadius;
 }
+public double getRadius() {
+	return radius;
+}
+public void setRadius(double r) {
+	radius = r;
+}
+
 }
