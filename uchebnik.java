@@ -1,32 +1,34 @@
 package eddu.smg;
 
-public class uchebnik {
-private String name = new String();
-private double average;
+public class uchenik {
+private String m_name = new String();
+private double m_average;
 
- uchebnik(){
- }
- uchebnik(String name, double average){
- }
-	public boolean stipendia(uchebnik student) {
-		if(student.average>=5.5) {
+	 uchenik(){
+	 }
+ 
+	 uchenik(String name, double average){
+		 m_name = name;
+		 m_average = average;
+	 }
+ 
+	public boolean stipendia(double average) {
+		if(average>=5.5 || average<6) {
 			return true;
 		}
-		else {
-			return false;
-		}
+		return false;
 	}
+	
 	public String getName() {
-		return name;
+		return m_name;
 	}
 	public void setName(String n) {
-		name = n;
+		m_name = n;
 	}
 	public double getAverage() {
-		return average;
+		return m_average;
 	}
 	public void setAverage(double a) {
-		average=a;
+		m_average=a;
 	}
 }
-
